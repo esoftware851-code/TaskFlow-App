@@ -1,0 +1,70 @@
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+}
+
+.iconContainer {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.iconContainer.total {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--accent-color);
+}
+
+.iconContainer.pending {
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--status-pending);
+}
+
+.iconContainer.progress {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--status-progress);
+}
+
+.iconContainer.completed {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--status-completed);
+}
+
+.iconContainer.overdue {
+  background: rgba(239, 68, 68, 0.2);
+  color: var(--danger-color);
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}

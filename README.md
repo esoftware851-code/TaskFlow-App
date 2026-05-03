@@ -161,7 +161,7 @@ Make sure to configure these in production:
 ## 👨‍💻 Developer
 
 * Name: Muhammad Hassaan
-* Project: Semester Full Stack Web Application
+* Project: Full Stack Web Application
 
 ---
 
